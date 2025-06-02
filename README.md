@@ -64,23 +64,35 @@ For deeper analysis, check out the generated visual plots stored in the outputs 
 
 
 Project Structure
+
+
 ![image](https://github.com/user-attachments/assets/1ba59757-ab0c-4107-acf8-0b45c9209b6e)
 
 
 Technologies Used
 Python 3.x
+
 Pandas, NumPy for data manipulation
+
 Scikit-learn for machine learning
+
 Matplotlib and Seaborn for visualization
+
 Flask for web interface
+
 Joblib for saving/loading the model
 
 Future Enhancements
-Incorporate advanced feature engineering and hyperparameter tuning.
-Add real-time data fetching from YouTube API.
-Deploy the web app to cloud hosting platforms (Heroku, AWS, etc.).
-Implement user authentication for personalized predictions.
-Add more detailed analytics and interactive visualizations.
+Incorporate advanced feature engineering and hyperparameter tuning
+
+Add real-time data fetching from YouTube API
+
+Deploy the web app to cloud hosting platforms (Heroku, AWS, etc.)
+
+Implement user authentication for personalized predictions
+
+Add more detailed analytics and interactive visualizations
 
 License
+
 This project is licensed under the MIT License.
