@@ -1,98 +1,167 @@
-YouTube-Channel-Revenue-Analysis-and-Prediction
 
-This project analyzes YouTube video data to identify key revenue drivers and predicts estimated revenue using a Random Forest model. It includes data cleaning, visualization, and a Flask web app where users input video stats to get real-time revenue predictions—helping creators optimize their YouTube earnings.
+# 🎥 YouTube-Channel-Revenue-Analysis-and-Prediction
 
+This project analyzes YouTube video data to identify key revenue drivers and predicts estimated revenue using a **Random Forest model**. It includes data cleaning, visualization, and a **Flask web app** where users can input video stats to get real-time revenue predictions—helping creators **optimize their YouTube earnings**.
 
+---
 
-Key Features:
-- Data cleaning and preprocessing, including converting video durations and timestamps.
-- Feature engineering with metrics like Revenue per View and Engagement Rate.
-- Exploratory Data Analysis (EDA) with distribution plots, scatter plots, and correlation heatmaps.
-- Training and evaluation of a Random Forest regression model for revenue prediction.
-- Visualization of feature importance to understand impact factors.
-- A Flask-based web UI to interactively predict revenue from video stats.
-- Modular and extensible codebase for easy updates.
+## 🔍 Key Features
 
+✅ Data cleaning and preprocessing (video durations, timestamps)
+✅ Feature engineering: *Revenue per View*, *Engagement Rate*, etc.
+✅ Exploratory Data Analysis (EDA) with distribution plots, scatter plots, and heatmaps
+✅ Random Forest regression model for revenue prediction
+✅ Visualizations of feature importance to understand impact factors
+✅ Flask-based web app for real-time revenue prediction
+✅ Modular and extensible codebase for easy updates
 
+---
 
-The dataset contains various YouTube video metrics, including but not limited to:
+## 📊 Dataset Overview
 
-- Video Duration
-- Video Publish Time
-- Views
-- Likes, Shares, Comments
-- Estimated Revenue (USD)
-- Subscribers
-- Engagement and revenue-related metrics
+The dataset contains various YouTube video metrics, including:
 
-The CSV file is expected to be in the `data/` directory.
+* **Video Duration**
+* **Video Publish Time**
+* **Views**
+* **Likes, Shares, Comments**
+* **Estimated Revenue (USD)**
+* **Subscribers**
+* **Engagement and revenue-related metrics**
 
+The CSV file should be placed in the `data/` directory.
 
-Step-by-Step Setup and Usage Instructions
-Clone the repository
-Download the entire project from GitHub to your local computer.
+---
 
-Create and activate a virtual environment
-Set up an isolated Python environment for this project to avoid conflicts with other Python packages.
+## 🚀 Setup and Usage
 
-Install required packages
-Install all necessary Python libraries listed in the requirements file to ensure the project runs smoothly.
+### 1️⃣ Clone the Repository
 
-Run data processing and model training
-Execute the main analysis script to clean and analyze the data, generate visualizations, and train the machine learning model. This process will save plots and the trained model on your system.
+```bash
+git clone https://github.com/yourusername/youtube-revenue-prediction.git
+cd youtube-revenue-prediction
+```
 
-Run the Flask web application
-Launch the web app that provides a user interface for inputting video statistics and predicting YouTube revenue.
+### 2️⃣ Create and Activate a Virtual Environment
 
-Open the app in a web browser
-Access the app locally by opening the provided address in your browser. (It will look like this)
-![image](https://github.com/user-attachments/assets/837d9942-b7d4-464e-bb8a-3091136511d2)
+```bash
+python -m venv venv
 
+# Windows
+venv\Scripts\activate
 
-How to Use the Web App
-Enter video statistics such as views, subscribers, likes, shares, comments, and engagement rate into the input fields.
+# macOS/Linux
+source venv/bin/activate
+```
 
-Submit the form to receive a real-time estimated revenue prediction based on your inputs.
+### 3️⃣ Install Required Packages
 
-For deeper analysis, check out the generated visual plots stored in the outputs folder.
-![revenue_vs_views](https://github.com/user-attachments/assets/61eb28cd-ae60-4b54-a3d8-06cdfc6db21b)
-![revenue_distribution](https://github.com/user-attachments/assets/ccc15576-a711-420b-8631-ed1512123fd0)
-![feature_importance](https://github.com/user-attachments/assets/e1fad969-ab3d-4da7-a955-ec68588fc140)
-![correlation_heatmap](https://github.com/user-attachments/assets/50655859-8d89-4a51-87c8-0a62a3189cae)
+```bash
+pip install -r requirements.txt
+```
 
+### 4️⃣ Run Data Processing and Model Training
 
+```bash
+python main.py
+```
 
+This will:
 
-Project Structure
+* Clean and process the data
+* Generate visualizations (saved in `outputs/plots/`)
+* Train the model and save it as `models/youtube_revenue_predictor.pkl`
 
+### 5️⃣ Launch the Flask Web App
 
-![image](https://github.com/user-attachments/assets/1ba59757-ab0c-4107-acf8-0b45c9209b6e)
+```bash
+python app.py
+```
 
+### 6️⃣ Open the App in Your Browser
 
-Technologies Used
-Python 3.x
+Visit: [http://127.0.0.1:5000/](http://127.0.0.1:5000/)
 
-Pandas, NumPy for data manipulation
+---
 
-Scikit-learn for machine learning
+## 🌐 Web App Usage
 
-Matplotlib and Seaborn for visualization
+* Input video stats: **Views, Subscribers, Likes, Shares, Comments, Engagement Rate**
+* Submit the form to get a **real-time estimated revenue prediction**
+* Explore the visual plots for deeper insights (saved in `outputs/plots/` folder)
 
-Flask for web interface
+---
 
-Joblib for saving/loading the model
+## 📸 Sample Visuals
 
-Future Enhancements
-Incorporate advanced feature engineering and hyperparameter tuning
+| **Revenue vs Views**                                                                                   | **Revenue Distribution**                                                                                  |
+| ------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------- |
+| ![revenue\_vs\_views](https://github.com/user-attachments/assets/61eb28cd-ae60-4b54-a3d8-06cdfc6db21b) | ![revenue\_distribution](https://github.com/user-attachments/assets/ccc15576-a711-420b-8631-ed1512123fd0) |
 
-Add real-time data fetching from YouTube API
+| **Feature Importance**                                                                                  | **Correlation Heatmap**                                                                                  |
+| ------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
+| ![feature\_importance](https://github.com/user-attachments/assets/e1fad969-ab3d-4da7-a955-ec68588fc140) | ![correlation\_heatmap](https://github.com/user-attachments/assets/50655859-8d89-4a51-87c8-0a62a3189cae) |
 
-Deploy the web app to cloud hosting platforms (Heroku, AWS, etc.)
+---
 
-Implement user authentication for personalized predictions
+## 🗂️ Project Structure
 
-Add more detailed analytics and interactive visualizations
+```
+youtube-revenue-prediction/
+│
+├── data/
+│   └── youtube_channel_real_performance_analytics.csv
+│
+├── models/
+│   └── youtube_revenue_predictor.pkl
+│
+├── outputs/
+│   └── plots/
+│       ├── revenue_distribution.png
+│       ├── revenue_vs_views.png
+│       ├── feature_importance.png
+│       └── correlation_heatmap.png
+│
+├── templates/
+│   ├── index.html
+│   └── result.html
+│
+├── static/
+│   └── css/
+│       └── styles.css
+│
+├── main.py           # Data processing, EDA, and model training
+├── app.py            # Flask web app
+├── requirements.txt  # Project dependencies
+└── README.md         # Project documentation
+```
 
-License
+---
 
-This project is licensed under the MIT License.
+## 🛠️ Technologies Used
+
+* **Python 3.x**
+* **Pandas**, **NumPy** (data manipulation)
+* **Scikit-learn** (machine learning)
+* **Matplotlib**, **Seaborn** (visualization)
+* **Flask** (web app interface)
+* **Joblib** (model persistence)
+
+---
+
+## 🌟 Future Enhancements
+
+* Advanced feature engineering & hyperparameter tuning
+* Real-time data fetching from **YouTube API**
+* Cloud deployment (Heroku, AWS, etc.)
+* User authentication for personalized predictions
+* More detailed analytics and interactive visualizations
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License**.
+
+---
+
