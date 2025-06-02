@@ -64,33 +64,8 @@ For deeper analysis, check out the generated visual plots stored in the outputs 
 
 
 Project Structure
+![image](https://github.com/user-attachments/assets/1ba59757-ab0c-4107-acf8-0b45c9209b6e)
 
-youtube-revenue-prediction/
-│
-├── data/
-│   └── youtube_channel_real_performance_analytics.csv
-│
-├── models/
-│   └── youtube_revenue_predictor.pkl
-│
-├── outputs/
-│   └── plots/
-│       ├── revenue_distribution.png
-│       ├── revenue_vs_views.png
-│       └── feature_importance.png
-│
-├── templates/
-│   ├── index.html
-│   └── result.html
-│
-├── static/
-│   └── css/
-│       └── styles.css
-│
-├── main.py           # Data processing, EDA, and model training
-├── app.py            # Flask web app
-├── requirements.txt  # Python dependencies
-└── README.md         # This file
 
 Technologies Used
 Python 3.x
