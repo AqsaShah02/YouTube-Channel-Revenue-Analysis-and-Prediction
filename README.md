@@ -38,8 +38,8 @@ The CSV file should be placed in the `data/` directory.
 ### 1️⃣ Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/youtube-revenue-prediction.git
-cd youtube-revenue-prediction
+git clone https://github.com/AqsaShah02/YouTube-Channel-Revenue-Analysis-and-Prediction.git
+cd YouTube-Channel-Revenue-Analysis-and-Prediction
 ```
 
 ### 2️⃣ Create and Activate a Virtual Environment
